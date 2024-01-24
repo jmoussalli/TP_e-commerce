@@ -1,5 +1,6 @@
 package com.ecommerce.dao;
 
+import com.ecommerce.entity.Article;
 import com.ecommerce.entity.Categorie;
 
 import java.util.List;
@@ -36,4 +37,9 @@ public class CategorieDAO {
         return categorieDAO.delete(categorie);
     }
 
+    public static Categorie addArticle(Article articleToAdd) {
+        Categorie categorie = categorieDAO.findById(articleToAdd.getCategory_id());
+        categorie.addArticle(articleToAdd);
+        return categorieDAO.save(categorie);
+    }
 }

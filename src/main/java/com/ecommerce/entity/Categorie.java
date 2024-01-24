@@ -14,7 +14,7 @@ public class Categorie {
     private Integer id;
     private String nom;
 
-    @OneToMany()
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Article> articles = new ArrayList<>();
 
     public Integer getId() {
@@ -50,7 +50,7 @@ public class Categorie {
         return "Category{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
-                ", articles=" + articles +
+                ", articles=" + articles.toString() +
                 '}';
     }
 }
