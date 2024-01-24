@@ -1,0 +1,23 @@
+meta {
+  name: PutCategorieInformatique
+  type: http
+  seq: 11
+}
+
+put {
+  url: http://localhost:8080/jcd-starter-jakarta10-ws/v1/categories/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":1,
+    "articles":[{
+      "id": 1,
+      "nom": "souris",
+      "prix": 4.99,
+      "category_id": null
+    }]
+  }
+}
