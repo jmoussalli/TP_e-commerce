@@ -13,7 +13,7 @@ public class Categorie {
     @Column(name = "id", nullable = false)
     private Integer id;
     private String nom;
-
+//sdgsdgsg
     @OneToMany(fetch = FetchType.EAGER)
     private List<Article> articles = new ArrayList<>();
 
