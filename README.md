@@ -1,2 +1,2 @@
-# Jakarta EE 10 Starter + Jersey for WS REST
+# TP e-commerce JPA + WS
 ## Deploy on Tomcat 10
