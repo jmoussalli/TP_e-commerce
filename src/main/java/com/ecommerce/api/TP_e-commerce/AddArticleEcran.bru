@@ -1,0 +1,18 @@
+meta {
+  name: AddArticleEcran
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/jcd-starter-jakarta10-ws/v1/articles
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nom":"écran",
+    "prix":99.99
+  }
+}

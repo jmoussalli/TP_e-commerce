@@ -1,0 +1,19 @@
+meta {
+  name: PutArticle
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/jcd-starter-jakarta10-ws/v1/articles/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":2,
+    "nom":"souris verte",
+    "prix":4.99
+  }
+}
